@@ -1,7 +1,5 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
-
 
 public class nomor2 {
     public static void main(String[] args) {
@@ -25,15 +23,12 @@ public class nomor2 {
                 break;
             }
         }
-
          int totalHarga = hitungTotalHarga(hargaBelanja);
-
          int voucherBelanja = hitungVoucherBelanja(totalHarga);
  
          System.out.println("Total voucher belanja = " + voucherBelanja);
          System.out.println("Total yang harus dibayar = " + (totalHarga - voucherBelanja));
      }
- 
      public static int hitungTotalHarga(ArrayList<Integer> hargaBelanja) {
          int totalHarga = 0;
          for (int harga : hargaBelanja) {
